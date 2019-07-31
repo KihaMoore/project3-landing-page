@@ -11,34 +11,47 @@
 </head>
 <body>
 
-  
+    <section class="banner" data-direction="down" data-speed="0.5">
+        <img class="beet" src="img/beet.png" alt="" data-direction="up" data-speed="0.3">
+         <img class="risu1" src="img/risu.png" alt="" data-direction="up" data-speed="0.3">
+         <img class="cabedge1" src="img/cabedge.png" alt="" data-direction="up" data-speed="0.1">
+         <!-- <img class="beet1" src="img/beet.png" alt="" data-direction="down" data-speed="0.5"> -->
+         <img class="bee-right" src="img/bee.png" alt="" data-direction="up" data-speed="4">
+         <div class="container">
+            <h1 class="main-title">Welcome to our seed exchange community!</h1>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            </div>
+         <img class="kabu1" src="img/kabu.png" alt="" data-direction="down" data-speed="1.5">
+     </section>
+     
+     <section class="banner" data-direction="down" data-speed="0.5">
+       
+       <p class="banner-subtitle" data-direction="up" data-speed="0.35">...Garden lovers community!</p>
+         <img class="garlic-s" src="img/garlic.png" alt="" data-direction="up" data-speed="1">
+        
+     </section>
+
     
-  <section class="banner" data-direction="down" data-speed="2">
-      <img class="skiing5" src="garlic.png" alt="" data-direction="down" data-speed="4">
-      <img class="skiing4" src="garlic.png" alt="" data-direction="down" data-speed="3">
-      <img class="skiing2" src="nasu.png" alt="" data-direction="down" data-speed="0.5">
-      <img class="skiing3" src="carrot.png" alt="" data-direction="up" data-speed="2">
-      <img class="skiing3-1" src="bee.png" alt="" data-direction="up" data-speed="0.1">
-      <img class="skiing3-2" src="lemon.png" alt="" data-direction="up" data-speed="0.1">
-      
-      
-      
-    <!-- <h1 class="banner-title" data-direction="up" data-speed="0.25">Why don't seed exchange?</h1>
-    <p class="banner-subtitle" data-direction="up" data-speed="0.35">...and many more activities!</p> -->
-    <img class="skiing" src="cabedge.png" alt="" data-direction="up" data-speed="0.1">
-    <img class="skiing-1" src="beet.png" alt="" data-direction="" data-speed="0.5">
-    <img class="skiing-2" src="kabu.png" alt="" data-direction="down" data-speed="2">
+    <section class="banner" data-direction="down" data-speed="0.5">
+     <h1 class="banner-title" data-direction="up" data-speed="0.25">Let's exchange our seed</h1>
+    <p class="banner-subtitle" data-direction="up" data-speed="0.35">...Garden lovers community!</p>
+      <img class="garlic-s" src="img/garlic.png" alt="" data-direction="up" data-speed="1">
+      <img class="kabu1" src="img/kabu.png" alt="" data-direction="down" data-speed="1.5">
+      <img class="garlic-Large" src="img/garlic.png" alt="" data-direction="down" data-speed="0.9">
+      <img class="nasu" src="img/nasu.png" alt="" data-direction="down" data-speed="0.3">
+      <img class="bee-left" src="img/bee.png" alt="" data-direction="up" data-speed="3">
+      <img class="rabbit" src="img/rabbit.png" alt="" data-direction="up" data-speed="3">
+      <img class="kabu" src="img/kabu.png" alt="" data-direction="down" data-speed="1.5">
   </section>
   
   <section class="content">
     <div class="container">
       <h2>Why Seed Exchange?</h2>
       <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-     
-    </div>
+      </div>
   </section>
 
-   
+  
   
 <script>
 const parallaxEls = document.querySelectorAll("[data-speed]");
@@ -52,7 +65,7 @@ function scrollHandler() {
     if (parallaxEl.classList.contains("banner-title")) {
       parallaxEl.style.transform = `translate3d(0,${direction}${transformY}px,0) rotate(-10deg)`;
     } else if (parallaxEl.classList.contains("banner-subtitle")) {
-      parallaxEl.style.transform = `translate3d(0,${direction}${transformY}px,0) rotate(-6deg)`;
+      parallaxEl.style.transform = `translate3d(0,${direction}${transformY}px,0) rotate(-1deg)`;
     } else {
       parallaxEl.style.transform = `translate3d(0,${direction}${transformY}px,0)`;
     }
